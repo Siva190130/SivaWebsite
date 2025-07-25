@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Skills Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            padding: 40px;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 25px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+            color: #555;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .checkbox-group {
+            margin-top: 10px;
+        }
+
+        .checkbox-group label {
+            font-weight: normal;
+            color: #333;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Employee Information Form</h2>
+    <form action="Serv1">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="designation">Designation:</label>
+        <input type="text" id="Designation" name="Designation" required>
+
+        <label>Skills:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="java" name="skills" value="Java">
+            <label for="java">Java</label><br>
+
+            <input type="checkbox" id="python" name="skills" value="Python">
+            <label for="python">Python</label><br>
+
+            <input type="checkbox" id="c" name="skills" value="C">
+            <label for="c">C</label><br>
+
+            <input type="checkbox" id="cpp" name="skills" value="C++">
+            <label for="cpp">C++</label><br>
+
+            <input type="checkbox" id="mysql" name="skills" value="MySQL">
+            <label for="mysql">MySQL</label><br>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: mysql-siva
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: sivadb1
+    volumes:
+      - ./sql/sivadb1.sql:/docker-entrypoint-initdb.d/sivadb1.sql
+    ports:
+      - "3307:3306"
+
+  web:
+    build: .
+    container_name: siva-web
+    depends_on:
+      - mysql
+    ports:
+      - "8080:8080"
