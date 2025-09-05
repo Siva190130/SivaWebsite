@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class driver
  */
-@WebServlet("/driver")
+
 public class driver extends HttpServlet {
 	Connection con = null;
 	PreparedStatement pstm=null;
